@@ -1,6 +1,5 @@
 import streamlit as st
 
-import streamlit as st
 import pandas as pd
 
 # Set the title of the app
@@ -15,7 +14,7 @@ def upload_1():
     if uploaded_file_1:
         if uploaded_file_1.type is not None:
         
-            df_1 = pd.csv(uploaded_file_1)
+            df_1 = pd.read_csv(uploaded_file_1)
 
             st.write(df_1.head())
 
