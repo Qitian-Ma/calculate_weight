@@ -9,7 +9,7 @@ col1, col2 = st.columns([3, 3])
 
 @st.experimental_fragment
 def upload_1():
-    uploaded_file_1 = st.file_uploader("Choose a file", type=["csv"], key='file_1')
+    uploaded_file_1 = st.file_uploader("Choose a file", type=["xlsx"], key='file_1')
 
     if uploaded_file_1:
         if uploaded_file_1.type is not None:
