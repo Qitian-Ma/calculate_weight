@@ -14,7 +14,7 @@ def upload_1():
     if uploaded_file_1:
         if uploaded_file_1.type is not None:
         
-            df_1 = pd.read_exce(uploaded_file_1, engine='openpyxl', sheet_name=0)
+            df_1 = pd.read_excel(uploaded_file_1, engine='openpyxl', sheet_name=0)
 
             st.write(df_1.head())
 
